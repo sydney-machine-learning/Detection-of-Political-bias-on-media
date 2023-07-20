@@ -7,8 +7,8 @@ Time passed and some work blur in my mind.
 ## Preprocessing steps Thought may help you know the structure
 1. decide a better training dataset, what I used to train seems not to have a strong emotion to better distinguish a 'left' or 'right'. You can use another one e.g. iMDB dataset that Rohit used to predict the US presidential election in each state.
 2. once finishing the training raw data, do something to make it good for training, for example, using site-packages like nltk to tokenize sentences or words, stemmer. Pad the sequences. In this part, my code is really a mess as I do some useless tests. Ask me via messages if you encounter some problems.
-3. Prepare testing data, I use site-packages newspaper to download some famous newspaper articles via website, of course just choose the catalog 'politics'.
-4. Define the model, I only tried the LSTM for the training model, a lot of models such as BERT if you find it bad and wanna try other one, the advanced model of these all based on transformer.
+3. Prepare testing data, I use site-packages newspaper to download(crawl) some famous newspaper articles via website, of course just choose the catalog 'politics'.
+4. Define the model, I only tried the LSTM for the training model, a lot of models such as word2vec, BERT if you find it bad and wanna try other one, the advanced model of these all based on transformer. Try hyper-parameter tuning or better preprocessing training data to improve.
 5. Focus the loss or confusion matrix to be the criterion of the performance of the model
 
 ## Introduction / Literature Review
