@@ -1,17 +1,17 @@
 # Detection of Political bias on media
 
-The main task is to detect the political bias in Western media (I prefer to focus on several news media such as BBC, ABC, which have online access to gain data), to  
+The main task is to detect the political bias in Western media (I prefer to focus on several news media such as BBC, ABC, which have online access to gain data), to  better understand whether media can affect human political preference, especially the comparison between pre-COVID period and post-COVID period. 
 
 Time passed and some work blur in my mind.
 
-# Preprocessing steps Thought may help you know the structure
+## Preprocessing steps Thought may help you know the structure
 1. decide a better training dataset, what I used to train seems not to have a strong emotion to better distinguish a 'left' or 'right'. You can use another one e.g. iMDB dataset that Rohit used to predict the US presidential election in each state.
 2. once finishing the training raw data, do something to make it good for training, for example, using site-packages like nltk to tokenize sentences or words, stemmer. Pad the sequences. In this part, my code is really a mess as I do some useless tests. Ask me via messages if you encounter some problems.
 3. Prepare testing data, I use site-packages newspaper to download some famous newspaper articles via website, of course just choose the catalog 'politics'.
 4. Define the model, I only tried the LSTM for the training model, a lot of models such as BERT if you find it bad and wanna try other one, the advanced model of these all based on transformer.
 5. Focus the loss or confusion matrix to be the criterion of the performance of the model
 
-# Introduction / Literature Review
+## Introduction / Literature Review
 
 Text serves as a medium for the dissemination of human civilization, and history is recorded through written records. Howard Zinn attempted to challenge mainstream historical narratives by describing the experiences of marginalized groups in American history, in his work "A People's History of the United States,” emphasizing the political nature of historical writing and the power of the victors.\cite{zinn2015people} Thus, text written by individuals inherently carries their own subjectivity and societal experience.\cite{gavelek2014ways} Therefore, regardless of how objectively one claims their discourse to be, their upbringing and online environment will subtly influence their perception and judgment. Consequently, the political bias of Western media objectively exists.\cite{mcchesney2016rich}\cite{herman2010manufacturing} Thanks to the rapid development of the internet, social media platforms have emerged in every country, allowing citizens to express their opinions freely at virtually no cost. Any statements made on social media platforms such as Twitter or Facebook carry their own political inclinations, particularly regarding keywords related to presidents, elections, and national systems.\cite{himelboim2013birds} As news media represents a professional platform with greater public attention, this political bias is also evident in each specific publication.
 
@@ -20,4 +20,7 @@ Studying potential political bias using machine learning and deep learning metho
 In most academic research, political bias is commonly categorized as democratic, conservative, or neutral.\cite{gezici2022quantifying} However, the existence of political bias among individuals varies across different countries. For instance, in the United States, traditional classifications include the Republican Party and the Liberal Party,\cite{layman2006party} while in Australia, there is the Australian Labor Party representing workers' interests. As a result, political bias in different news media outlets can be highly complex. It can be helpful to broadly classify different political parties as left-wing or right-wing. Numerous scholars have conducted extensive research in this area, and several machine learning approaches have been developed to effectively detect political bias in textual content. David et al. attempted to predict the political party affiliation of Israeli Facebook users by training two SVM classifiers on the Facebook pages of Israel’s political parties.\cite{david2016utilizing} Malouf and Mullen used a Naïve Bayes text classifier to predict the political party affiliation of political discussion board users.\cite{malouf2008taking} H Kang et al. used a document classification technique called doc2vec to train social data from Facebook post to quantitatively confirm that significant political bias exists in the newspaper in South Korea.\cite{kang2022quantifying} R Chandra used BERT language model and LSTM model for Twitter sentiment analysis to predict a potential winner in US presidential elections.\cite{chandra2021biden} Although some work has been done before, a comparison between the pre-pandemic era and the post-pandemic era is a new area.
 
 # Last
+paragraph1. political bias exists in each person and each country's news media 
+parahraph2.  Studying potential political bias using machine learning and deep learning methods is important because the information individuals encounter can affect their judgment to a certain extent
+
 You can ask me for some reference papers related to the project. Hope you do all well on this project.
